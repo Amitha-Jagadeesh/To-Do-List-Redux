@@ -1,22 +1,44 @@
-.App {
+*{
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+header{
+  width:100%;
+  height:100vh;
+  background: linear-gradient(50deg,gold,rgb(167, 90, 90));  
+  transition: all .5s ease;
+  background-size: 100% 100%;
+  font-family: 'Montserrat', sans-serif;
+  color:white;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
+header h1{
+  font-size: 2.5rem;
+  padding: 20px 0px; 
+  position:absolute;
+  left:0;
+  animation-name: textmoving;
+  animation-duration: 6s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+@keyframes textmoving{
+  from{left:0}
+  to{left:60%}
 }
 
-.App-link {
-  color: #09d3ac;
+.header{
+  width:600px;
+  height:auto;
+  background: linear-gradient(20deg,rgb(167, 90, 90),gold,orange);  
+  position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    box-shadow: 5px 5px rgb(240, 166, 97), 10px 10px rgb(218, 167, 110), 15px 15px rgb(235, 167, 21);
+    overflow: hidden;  
 }
