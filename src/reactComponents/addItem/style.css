@@ -1,41 +1,26 @@
 .addItem{
-    height:100px;    
-}
-
-.addItem h1{
-    width:100%;
-    height:50px;
-    padding: 5px 0px;
-    font-size: 2.5rem;
-    color: rgb(39, 35, 35);
-    animation: todolist 5s infinite;
-}
-
-@keyframes todolist{
-    0%{color:rgb(240, 231, 231);}
-	30%{color: rgb(209, 28, 28);}
-	50%{color: rgb(30, 194, 38);}
-	75%{color: rgb(24, 156, 204);}
-	100%{color: rgb(53, 32, 173);}
-}
-
-.addItemForm{
-    padding: 4px 20px;    
+    height:40px;  
+    background: whitesmoke;
 }
 
 .text{
     width:100%;
-    height:40px;    
+    height:50px;  
+    font-size: 25px;
+    color:rgb(90, 89, 89);
     display: block;
-    margin-top: 50px;
-    padding:0 20px;
+    padding:0 50px;
+    border: none;
+    outline: none;
+}
+
+.text select{
+    outline: none;
 }
 
 ::placeholder{
     color: black;
-    opacity: 0.4;
-    text-align: center;
-    font-size: 1.2rem;
-    font-family: cursive;
-    padding:10px,10px
+    opacity: 0.2;
+    font-size: 1.8rem;
+    font-family: italic;
 }
